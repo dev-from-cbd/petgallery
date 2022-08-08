@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: #f49d37;
+}
+
+h1 {
+  color: #140f2d;
+  text-align: center;
+
+  display: none;
+}
+
+.container {
+  background: #d7d6d8;
+
+  position: relative;
+  min-height: 100vh;
+
+  /* max-width: 1000px; */
+  max-width: 100vw;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 300px;
+}
+
+.container .search-box {
+  color: #140f2d;
+
+  position: relative;
+  height: 42px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.search-box input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 0 15px 0 45px;
+
+  color: #140f2d;
+
+  border-radius: 6px;
+}
+
+.search-box i {
+  position: absolute;
+  z-index: 2;
+  color: #140f2d;
+  top: 50%;
+  left: 15px;
+  font-size: 20px;
+  transform: translateY(-50%);
+}
+
+::placeholder {
+  color: lightgray;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: lightgray;
+}
+
+::-ms-input-placeholder {
+  color: lightgray;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.container .images .image-box {
+  position: relative;
+  height: 300px;
+  width: 210px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.images .image-box {
+  margin: 8px;
+}
+
+.images .image-box img {
+  /* height: 100%; */
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.2s linear;
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+.image-box h6 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
