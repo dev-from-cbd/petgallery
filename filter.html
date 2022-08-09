@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dropdown Search Box</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://demo.plantpot.works/assets/css/normalize.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css" />
+    <link rel="stylesheet" type="text/css" href="css/filter.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="search-box">
+        <input
+          class="search-form-input"
+          type="search"
+          name="search"
+          placeholder="Filter"
+        />
+        <details id="dropdown" class="dropdown">
+          <summary class="dropdown-button">
+            <span id="selected-item" class="selected-item triangle-up"
+              >&nbsp;</span
+            >
+          </summary>
+          <details-menu class="dropdown-menu">
+            <div class="dropdown-menu-list">
+              <hr />
+              <label class="dropdown-menu-item">
+                <input type="radio" name="item" />
+                <!-- 
+                <input type="radio" name="item" value="Cats" />-->
+                <span class="background-image background-image__cat">Cats</span>
+              </label>
+              <hr />
+              <label class="dropdown-menu-item">
+                <input type="radio" name="item" />
+                <!-- 
+                <input type="radio" name="item" value="Dogs" />-->
+                <span class="background-image background-image__dog">Dogs</span>
+              </label>
+              <hr />
+              <label class="dropdown-menu-item">
+                <input type="radio" name="item" />
+                <!-- 
+                <input type="radio" name="item" value="Birds" />-->
+                <span class="background-image background-image__bird"
+                  >Birds</span
+                >
+              </label>
+              <hr />
+            </div>
+          </details-menu>
+        </details>
+      </div>
+    </div>
+
+    <script>
+      var items = document.getElementsByName("item");
+      var selectedItem = document.getElementById("selected-item");
+      var dropdown = document.getElementById("dropdown");
+
+      items.forEach((item) => {
+        item.addEventListener("change", () => {
+          if (item.checked) {
+            selectedItem.innerHTML = item.value;
+            dropdown.open = false;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
