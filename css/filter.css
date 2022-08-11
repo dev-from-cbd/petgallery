@@ -4,7 +4,6 @@ hr {
   background-color: #f49d37;
 }
 
-@charset "utf-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +15,7 @@ html {
 body {
   background-color: #cff3f3;
   font-family: futura-pt, sans-serif;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
 #container {
   display: flex;
@@ -33,7 +32,7 @@ body {
 }
 
 .search-form-input {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   appearance: none;
   position: relative;
   width: 75%;
@@ -41,7 +40,7 @@ body {
   padding: 5px 20px 5px 50px;
   border: none;
   border-radius: 23px 0 0 23px;
-  background-image: url(/img/camera.png);
+  background-image: url(../img/camera.png);
   background-position: 15px center;
   background-size: 29px;
   background-repeat: no-repeat;
@@ -53,25 +52,25 @@ body {
   font-size: 1.25rem;
   outline: none;
 
-  -webkit-box-shadow: 0px 2px 1px lightgray;
-  -moz-box-shadow: 0px 2px 1px lightgray;
+  /* -webkit-box-shadow: 0px 2px 1px lightgray;
+  -moz-box-shadow: 0px 2px 1px lightgray; */
   box-shadow: 0px 2px 1px lightgray;
 }
 
 .background-image__cat {
-  background-image: url(/img/cat.png);
+  background-image: url(../img/cat.png);
 }
 
 .background-image__dog {
-  background-image: url(/img/dog.png);
+  background-image: url(../img/dog.png);
 }
 
 .background-image__bird {
-  background-image: url(/img/bird.png);
+  background-image: url(../img/bird.png);
 }
 
 .background-image {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   appearance: none;
 
   position: relative;
@@ -129,9 +128,13 @@ body {
 
   background: #f49d37;
 }
+
+/*
 .dropdown-button::-webkit-details-marker {
   display: none;
 }
+*/
+
 .dropdown-button .selected-item {
   background: #f49d37;
 
